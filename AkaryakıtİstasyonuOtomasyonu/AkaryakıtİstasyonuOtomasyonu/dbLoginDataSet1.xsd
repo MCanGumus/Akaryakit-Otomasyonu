@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dbLoginDataSet1" targetNamespace="http://tempuri.org/dbLoginDataSet1.xsd" xmlns:mstns="http://tempuri.org/dbLoginDataSet1.xsd" xmlns="http://tempuri.org/dbLoginDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dbLoginConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbLoginConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AkaryakıtİstasyonuOtomasyonu.Properties.Settings.GlobalReference.Default.dbLoginConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="YakıtTableAdapter" GeneratorDataComponentClassName="YakıtTableAdapter" Name="Yakıt" UserDataComponentName="YakıtTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbLoginConnectionString (Settings)" DbObjectName="dbLogin.dbo.Yakıt" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Benzin(Kurşunsuz)] FROM dbo.Yakıt</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Benzin(Kurşunsuz)" DataSetColumn="Benzin(Kurşunsuz)" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dbLoginDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dbLoginDataSet1" msprop:Generator_UserDSName="dbLoginDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Yakıt" msprop:Generator_TableClassName="YakıtDataTable" msprop:Generator_TableVarName="tableYakıt" msprop:Generator_TablePropName="Yakıt" msprop:Generator_RowDeletingName="YakıtRowDeleting" msprop:Generator_RowChangingName="YakıtRowChanging" msprop:Generator_RowEvHandlerName="YakıtRowChangeEventHandler" msprop:Generator_RowDeletedName="YakıtRowDeleted" msprop:Generator_UserTableName="Yakıt" msprop:Generator_RowChangedName="YakıtRowChanged" msprop:Generator_RowEvArgName="YakıtRowChangeEvent" msprop:Generator_RowClassName="YakıtRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Benzin_x0028_Kurşunsuz_x0029_" msprop:Generator_ColumnVarNameInTable="_columnBenzin_Kurşunsuz_" msprop:Generator_ColumnPropNameInRow="_Benzin_Kurşunsuz_" msprop:Generator_ColumnPropNameInTable="_Benzin_Kurşunsuz_Column" msprop:Generator_UserColumnName="Benzin(Kurşunsuz)" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
